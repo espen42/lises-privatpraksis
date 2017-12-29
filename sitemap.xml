@@ -1,42 +1,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://espen42.github.io/lises-privatpraksis</loc>
-        <lastmod>2017-12-29T19:37:50.064Z</lastmod>
+        <loc>http://lisehundtofte.no</loc>
+        <lastmod>2017-12-29T21:13:35.002Z</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>
-            https://espen42.github.io/lises-privatpraksis/behandling.html
+            http://lisehundtofte.no/behandling.html
         </loc>
-        <lastmod>2017-12-28T23:40:36.418Z</lastmod>
+        <lastmod>2017-12-29T21:13:34.999Z</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-            https://espen42.github.io/lises-privatpraksis/veiledning.html
+            http://lisehundtofte.no/veiledning.html
         </loc>
-        <lastmod>2017-12-28T23:40:36.418Z</lastmod>
+        <lastmod>2017-12-29T21:13:34.999Z</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-            https://espen42.github.io/lises-privatpraksis/bakgrunn.html
+            http://lisehundtofte.no/bakgrunn.html
         </loc>
-        <lastmod>2017-12-29T19:37:50.064Z</lastmod>
+        <lastmod>2017-12-29T21:13:34.999Z</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-            https://espen42.github.io/lises-privatpraksis/kontakt.html
+            http://lisehundtofte.no/kontakt.html
         </loc>
-        <lastmod>2017-12-29T19:36:22.540Z</lastmod>
+        <lastmod>2017-12-29T21:13:35.000Z</lastmod>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>
-            https://espen42.github.io/lises-privatpraksis/index.html
+            http://lisehundtofte.no/index.html
         </loc>
-        <lastmod>2017-12-28T23:40:36.419Z</lastmod>
+        <lastmod>2017-12-29T21:13:35.000Z</lastmod>
         <priority>0.64</priority>
     </url>
 </urlset>
