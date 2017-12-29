@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+sitemap: https://espen42.github.io/lises-privatpraksis/sitemap.xml
