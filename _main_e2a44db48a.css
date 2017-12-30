@@ -20,23 +20,30 @@
   background-image: url(images/bg_noise_dark_30soft.png);
   font-family: "Calluna Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
 
 .content {
   width: 100%;
-  min-width: 900px; }
+  box-sizing: border-box;
+  padding: 0 0 40px; }
 
 .bright {
   min-height: 550px;
   background-color: #f4f4f4;
-  background-image: url(images/bg_noise_bright_15b.png);
-  padding: 0 0 40px 0; }
+  background-image: url(images/bg_noise_bright_15b.png); }
 
 .center {
-  width: 900px;
+  max-width: 940px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  text-align: left; }
+  text-align: left;
+  box-sizing: border-box; }
+
+.padder {
+  width: 95%;
+  margin: 0 2.5%; }
 @charset "UTF-8";
 /* ----------------------------  Fonts  --------------------------- */
 @font-face {
@@ -66,29 +73,6 @@ address {
 main {
   margin-bottom: 60px; }
 
-h1 {
-  font-family: "Calluna Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  position: absolute;
-  color: #555;
-  top: -200px; }
-
-h2 {
-  font-family: "Calluna Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
-  color: #849f35;
-  font-weight: 300;
-  font-size: 20pt; }
-
-h3 {
-  font-family: "Calluna Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  width: 142px;
-  display: inline-block;
-  font-size: 14pt;
-  line-height: 150%;
-  font-weight: 300;
-  margin: 1em 0 0;
-  padding: 0; }
-
 a {
   color: #849f35;
   text-decoration: none;
@@ -106,9 +90,12 @@ p {
 
 .cont {
   vertical-align: top;
-  width: 227px;
+  width: 200px;
   display: inline-block;
-  font-family: "Calluna Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Calluna Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 1.4em; }
+  .cont p {
+    margin: 0; }
 
 .mail_warning {
   font-style: italic;
@@ -116,6 +103,34 @@ p {
   line-height: 145%;
   color: #c4c4c4;
   margin-top: 2px !important; }
+
+.flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.flex1 {
+  display: inline-block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+
+.no-flex {
+  display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto; }
 @charset "UTF-8";
 /* ----------------------------  Fonts  --------------------------- */
 @font-face {
@@ -143,15 +158,30 @@ p {
   border-top: 1px solid #999;
   letter-spacing: -5px;
   padding: 0;
-  margin: 0 0 30px 0; }
+  margin: 0 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
   #main_menu a, #main_menu .main_menu_active {
-    width: 180px;
     height: 47px;
     box-sizing: border-box;
     padding: 15px 0 10px;
     text-align: center;
-    display: inline-block;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto; }
   #main_menu a {
     text-decoration: none;
     color: #333;
@@ -286,3 +316,93 @@ p {
   font-weight: normal;
   src: url(fonts/callunaSans.eot);
   src: local("\263A"), url(fonts/callunaSans.eot?#iefix) format("embedded-opentype"), url(fonts/callunaSans.woff) format("woff"), url(fonts/callunaSans.ttf) format("truetype"), url(fonts/callunaSans.woff2) format("woff2"); }
+@charset "UTF-8";
+/* ----------------------------  Fonts  --------------------------- */
+@font-face {
+  font-family: 'Calluna Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: url(fonts/callunaRegular.eot);
+  src: local("\263A"), url(fonts/callunaRegular.eot?#iefix) format("embedded-opentype"), url(fonts/callunaRegular.woff) format("woff"), url(fonts/callunaRegular.ttf) format("truetype"), url(fonts/callunaRegular.woff2) format("woff2"); }
+
+@font-face {
+  font-family: 'Calluna Sans';
+  font-style: normal;
+  font-weight: normal;
+  src: url(fonts/callunaSans.eot);
+  src: local("\263A"), url(fonts/callunaSans.eot?#iefix) format("embedded-opentype"), url(fonts/callunaSans.woff) format("woff"), url(fonts/callunaSans.ttf) format("truetype"), url(fonts/callunaSans.woff2) format("woff2"); }
+
+/* -------------------------- Page and text headings ------------------------ */
+h1 {
+  font-family: "Calluna Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #555;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 100;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 3% 0 4%; }
+  h1 .char {
+    position: absolute;
+    top: -200px; }
+  h1 #name, h1 #business {
+    font-size: 143%;
+    display: inline-block; }
+  h1 #name {
+    padding-right: 3%;
+    white-space: nowrap; }
+  h1 #business {
+    color: #999; }
+  h1 .h1row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  h1 .sub_business {
+    font-size: 66%;
+    color: #555;
+    -webkit-box-flex: 2;
+        -ms-flex: 2 2 auto;
+            flex: 2 2 auto;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: .6%; }
+    h1 .sub_business:first-of-type {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
+      text-align: left;
+      border-right: 1px solid #bbb; }
+    h1 .sub_business:last-of-type {
+      -webkit-box-flex: 1;
+          -ms-flex: 1 1 auto;
+              flex: 1 1 auto;
+      text-align: right;
+      border-left: 1px solid #bbb; }
+
+h2 {
+  font-family: "Calluna Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: #849f35;
+  font-weight: 300;
+  font-size: 20pt; }
+
+h3 {
+  font-family: "Calluna Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 138px;
+  display: inline-block;
+  font-size: 14pt;
+  line-height: 150%;
+  font-weight: 300;
+  margin: 0; }
