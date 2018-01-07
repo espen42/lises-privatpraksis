@@ -64,7 +64,7 @@
     <link rel="apple-touch-startup-image"
           media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)"
           href="icons/apple-touch-startup-image-1536x2008.png">
-    <link href="_main_e3ed1625b2.css" rel="stylesheet">
+    <link href="_main_3383ed416f.css" rel="stylesheet">
 </head>
 
 <body>
@@ -73,7 +73,6 @@
 <div class="bright content">
 
     <div id="sticky-top" class="hidden">
-
         <a href="javascript:void(0);" title="Vis/skjul oversikt over innhold" onclick="swapMenus()" id="toggler"
            class="visible">
             <i class="fa fa-bars menu-icon" aria-hidden="true"></i>
@@ -91,7 +90,6 @@
             <a href="veiledning.html" title="Faglig veiledning"><i class="fa fa-university" aria-hidden="true"></i><span
                     class="label">VEILEDNING</span></a>
             <a href="kontakt.html" title="Ta kontakt"><i class="fa fa-phone" aria-hidden="true"></i><span class="label">KONTAKT</span></a>
-
         </nav>
 
     </div>
@@ -131,6 +129,11 @@
                 <a href="kontakt.html" title="Ta kontakt"><i class="fa fa-phone" aria-hidden="true"></i><span
                         class="label">KONTAKT</span></a>
 
+                <a href="javascript:void(0);" title="Vis/skjul oversikt over innhold" onclick="swapMenus()"
+                   id="expander">
+                    <i class="fa fa-bars menu-icon" aria-hidden="true"></i>
+                    MENY
+                </a>
             </nav>
 
 
@@ -297,15 +300,14 @@
         }
     }
 
-    var b = window;
+    var win = window;
 
-    b.onscroll = function () {
-        if (b.pageYOffset > 98) {
+    win.onscroll = function () {
+        if (win.pageYOffset > 98) {
             showTop();
         } else {
             hideTop()
         }
-        console.log(b.pageYOffset)
     };
 </script>
 
